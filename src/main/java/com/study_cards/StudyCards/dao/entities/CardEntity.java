@@ -16,7 +16,7 @@ package com.study_cards.StudyCards.dao.entities;
 public class CardEntity {
     @Id
     @NotNull
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     Long id;
 
