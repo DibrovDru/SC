@@ -16,7 +16,7 @@ import javax.persistence.*;
 public class FolderEntity {
     @Id
     @NotNull
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     Long id;
 
