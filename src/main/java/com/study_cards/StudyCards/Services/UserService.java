@@ -19,7 +19,12 @@ public class UserService {
 
         UserEntity find = userEntityRep.findByEmail(email);
 
-        return newUser.id.toString();
+                if (find == null) {
+            userEntityRep.save(newUser);
+            return "OK";
+        }
+
+        return "NO";
     }
 
     public String LogIn(String email, String password) {
